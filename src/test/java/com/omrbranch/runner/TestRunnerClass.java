@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(tags = "@profile", dryRun = false, stepNotifications = false, publish = true,  plugin = {
+@CucumberOptions(tags = "@log", dryRun = false, stepNotifications = false, publish = true,  plugin = {
 		"pretty", "json:target\\output.json" }, name = { //scenario name comes here 
 				"" }, glue = "com.omrbranch.stepdefinition", features = "src\\test\\resources\\features")
 public class TestRunnerClass extends BaseClass {
